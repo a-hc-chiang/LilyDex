@@ -1,7 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import LandingPage from './Pages/LandingPage.js';
 import SignInPage from './Pages/SignInPage';
+import SignUpPage from './Pages/SignUpPage';
+import ListsPage from './Pages/ListsPage';
+import SeriesPage from './Pages/SeriesPage';
+import SeriesInListPage from './Pages/SeriesInListPage';
+import SearchResultsPage from './Pages/SearchResultsPage';
 
 import { 
   BrowserRouter as Router, 
@@ -15,6 +19,11 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<SignInPage />} />
+          <Route path="/signUp" element={<SignUpPage />} />
+          <Route path="/myLists" element={<ListsPage />}/>
+          <Route path="/series/" element={<SeriesPage />}/>
+          <Route path="myLists/series" element={<SeriesInListPage />}/>
+          <Route path="/SearchResults/" element={<SearchResultsPage />}/>
         </Routes>
     </Router>
   );

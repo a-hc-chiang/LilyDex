@@ -1,0 +1,29 @@
+.SearchBar {
+    
+}
+
+.SearchBarInput {
+    width: 45%;
+    padding-bottom: .75%;
+    padding-top: .75%;
+    padding-left: 1.5%;
+    border-radius: 30px;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #534C00;
+    background-color: #D9D9D9;
+}
+
+input, select, textarea{
+    color: #534C00;
+}
+
+.SearchBarButton {
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border-radius: 30px;
+    font-size: x-large;
+    background-color: #E0B0FF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+}

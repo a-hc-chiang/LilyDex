@@ -1,9 +1,19 @@
 import '../../PagesCSS/Buttons.css';
+import { useNavigate } from 'react-router-dom';
 
 function IFLButton () {
+    const navigate = useNavigate(); 
+
+    function handleClick() {
+        navigate("../series/");
+        //how to move to sign in page 
+    }
+
     return (
         <div className='IFLButton'>
-            <h1>I'm feeling lucky!</h1>
+            <button type="button" onClick={handleClick}>
+                I'm feeling lucky
+            </button>
         </div>
     )
 }

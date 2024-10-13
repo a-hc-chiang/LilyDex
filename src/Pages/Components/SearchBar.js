@@ -1,22 +1,33 @@
 import '../../PagesCSS/Buttons.css';
 import { useNavigate } from 'react-router-dom';
 import SearchResultsPage from '../SearchResultsPage';
+import React, {useState} from 'react';
 
 function SearchBar() {
     const navigate = useNavigate(); 
-    let searchKeyword = '';
-    const searchBar = () => {}
+    const [searchInput, setSearchInput] = useState("");
+    
+    const handleChange = (e) => {
+        e.preventDefault();
+        setSearchInput(e.target.value);
+        // navigate("../SearchResults/" + searchInput);
+    };
 
-
-    function handleClick() {
-        navigate("../searchResults/" + searchKeyword);
-    }
-
+    const navigateToResults = (e) => {
+        navigate("../SearchResults/" + searchInput);
+    };
+    
     return (
         <div className='SearchBar'>
-            <SearchBar>
-
-            </SearchBar>
+            <input
+                className='SearchBarInput'
+                type="text"
+                placeholder="Search for series"
+                onChange={handleChange}
+                value={searchInput} />
+            <button className='SearchBarButton' onClick={navigateToResults}>
+                   Enter
+            </button>
         </div>
     );
 

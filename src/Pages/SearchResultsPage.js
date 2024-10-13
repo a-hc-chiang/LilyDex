@@ -1,6 +1,6 @@
 import '../PagesCSS/Pages.css';
 
-function SearchResultsPage() {
+function SearchResultsPage(inputVal) {
     return (
         <div className = 'SearchResultsPage'>
             <h1>Search results page!</h1>
