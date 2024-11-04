@@ -23,7 +23,7 @@ function App() {
           <Route path="/myLists" element={<ListsPage />}/>
           <Route path="/series/" element={<SeriesPage />}/>
           <Route path="myLists/series" element={<SeriesInListPage />}/>
-          <Route path="/SearchResults/" element={<SearchResultsPage />}/>
+          <Route path="/SearchResults/:inputVal" element={<SearchResultsPage />}/>
         </Routes>
     </Router>
   );

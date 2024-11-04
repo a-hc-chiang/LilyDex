@@ -26,7 +26,10 @@ function SearchBar() {
                 onChange={handleChange}
                 value={searchInput} />
             <button className='SearchBarButton' onClick={navigateToResults}>
-                   Enter
+                {/* Enter */}
+                <p className='SearchBarButtonText'>
+                    Enter
+                </p>
             </button>
         </div>
     );

@@ -11,8 +11,8 @@ function LoginButton() {
     }
 
     return(
-        <div className='LoginButton'>
-            <button type="button" onClick={handleClick}>
+        <div className='LoginButtonDiv'>
+            <button type="button" onClick={handleClick} div className='LoginButton'>
         Login
             </button>
         </div>

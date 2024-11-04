@@ -10,8 +10,8 @@ function IFLButton () {
     }
 
     return (
-        <div className='IFLButton'>
-            <button type="button" onClick={handleClick}>
+        <div className='IFLButtonClass'>
+            <button type="button" className='IFLButton' onClick={handleClick}>
                 I'm feeling lucky
             </button>
         </div>

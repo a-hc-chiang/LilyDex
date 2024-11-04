@@ -1,17 +1,60 @@
+.login
+
 .SearchBar {
-    
+    color: #534C00;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    width: 43%;
+    /* padding: 10px; */
+    height: 50px;
+}
+
+.IFLButtonClass {
+    padding-bottom: .75%;
+    padding-top: .75%;
+}
+
+.IFLButtonLandingPage{
+    margin-top: 10vh;
+}
+
+.IFLButton {
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 30px;
+    font-size: medium;
+    background-color: #C287E8;
+    color: #3D3D58;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    margin-left: 50%;
+    transform: translateX(-50%); 
 }
 
 .SearchBarInput {
-    width: 45%;
+    /* border: none; */
     padding-bottom: .75%;
     padding-top: .75%;
     padding-left: 1.5%;
     border-radius: 30px;
+    background-color:#D9D9D9;
+    float: left;
+    height: 40px;
+    width: 100%;
     font-size: x-large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #534C00;
-    background-color: #D9D9D9;
+    border-color: black;
+    /* color: #534C00;
+    background-color: #D9D9D9; */
+}
+
+.SearchBarButtonText {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+
 }
 
 input, select, textarea{
@@ -19,11 +62,39 @@ input, select, textarea{
 }
 
 .SearchBarButton {
-    padding-top: .5%;
-    padding-bottom: .5%;
+    position:relative;
+    float: right;
+    padding-left: 2%;
+    padding-right: 2%;
     border-radius: 30px;
     font-size: x-large;
-    background-color: #E0B0FF;
+    background-color: #C287E8;
+    color: #3D3D58;
+    margin-left: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 10px;
+    width: 20%;
+    top: -55px;
+    right: -20px
+}
+
+.LoginButtonDiv {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.LoginButton {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 93%; 
+    border-radius: 30px;
+    font-size: large;
+    background-color: #C287E8;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: none;
 }

@@ -1,6 +1,14 @@
 import '../PagesCSS/Pages.css';
+import { useNavigate } from "react-router-dom";
 
 function SignInPage () {
+    const navigate = useNavigate();
+
+    function handleClick() {
+        navigate("../signUp");
+        //how to move to sign up page 
+    }
+
     return (
         <div className = 'SignInPage'>
             
@@ -26,7 +34,7 @@ function SignInPage () {
                     </button>
                 </div>
                 <div className='CreateAccountButtonClass'>
-                    <button className='CreateAccountButton'>
+                    <button className='CreateAccountButton' onClick={handleClick}>
                         Create account
                     </button>
                 </div>
