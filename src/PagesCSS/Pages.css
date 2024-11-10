@@ -1,3 +1,23 @@
+.IFLButtonSearchResults {
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.SearchBarCompleteDiv {
+    width: 70%;
+    margin:auto; 
+    transform: translateX(-5%);
+    /* flex-direction: row;
+    display: flex;
+    flex-wrap: wrap; */
+}
+
+.XButtonSeachResults {
+    transform: translate3d(105%,-48%,0);
+    /* transform: translateX(105%); */
+    /* transform: translateY(-5%) */
+}
+
 .LandingPageDiv {
     background-color: #E0B0FF;
     height: 20%;

@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 import '../PagesCSS/Pages.css';
 import { useParams } from 'react-router-dom';
+import LoginButton from './Components/LoginButton';
+import SearchBar from './Components/SearchBar';
+import IFLButton from './Components/IFLButton';
+import XButton from './Components/Xbutton';
 
 function SearchResultsPage() {
     const [data, setData] = useState(null);
@@ -72,6 +76,22 @@ function SearchResultsPage() {
 
     return (
         <div className = 'SearchResultsPage'>
+            <div className='LoginDiv'>
+                <LoginButton></LoginButton>
+            </div>
+            
+            <div className='SearchBarCompleteDiv'>
+                <div className='SearchBarDivSearchResultsPage'>
+                    <SearchBar className='SearchBarResulstPage'></SearchBar>
+                </div>
+                <div className='XButtonSeachResults'>
+                    <XButton></XButton>
+                </div>
+            </div>
+
+            <div className='IFLButtonSearchResults'>
+                <IFLButton className='IFLButtonSearchResultsPage'></IFLButton>
+            </div>
             <h1>Search results page!</h1>
 
             {/* <p>{JSON.stringify(data)}</p>

@@ -2,6 +2,7 @@ import '../../PagesCSS/Buttons.css';
 import { useNavigate } from 'react-router-dom';
 import SearchResultsPage from '../SearchResultsPage';
 import React, {useState} from 'react';
+import XButton from './Xbutton';
 
 function SearchBar() {
     const navigate = useNavigate(); 
