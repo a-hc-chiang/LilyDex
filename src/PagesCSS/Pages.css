@@ -1,6 +1,47 @@
+/*Search Results page CSS*/
+
+.SeriesOuter {
+    width: 90%;
+    background-color: #FFE6FE;
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%; 
+    outline: 2px black;
+    box-shadow: 0 0 0 2px black;
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    gap: 2%; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transform: translate3d(0,-35%,0);
+}
+
+.SeriesImageDiv {
+    margin: auto; 
+    padding: -1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.SeriesTextDiv {
+    margin: auto;
+}
+
+.SeriesTitle {
+    color: #525174;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.SeriesSynoposis {
+    font-weight: bold;
+}
+
 .IFLButtonSearchResults {
     padding-bottom: 5%;
     padding-top: 5%;
+    transform: translate3d(-29%, -56%, 0);
+
 }
 
 .SearchBarCompleteDiv {
@@ -29,9 +70,10 @@
     padding-right: 4%;
 }
 
+/* Landing page css*/
+
 .LandingPage {
     margin:auto; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: xx-large;
     width: 70%;
     padding-top: 5%;
@@ -53,6 +95,8 @@
 .SeriesInPage {
 
 }
+
+/*Sign in page CSS*/
 
 .SignInPage {
     display: inline-block;
@@ -96,10 +140,7 @@
     margin: auto;
     margin-left: 5%;
 }
-/* 
-#SignInUsername{
-    color: red;
-} */
+
 
 .InputText{
     margin-left:11%;
@@ -130,7 +171,6 @@
     border-radius: 30px;
     font-size: x-large;
     background-color: #E0B0FF;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: none;
 }
 
@@ -143,7 +183,6 @@
     transform: translateX(-50%); 
     border-radius: 30px;
     font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #E0B0FF;
     border: none;
 }
@@ -159,4 +198,5 @@ html, body{
     margin: 0;
     height: 100%;
     width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

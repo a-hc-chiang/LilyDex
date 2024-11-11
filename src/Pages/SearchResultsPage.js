@@ -45,29 +45,47 @@ function SearchResultsPage() {
                     <div className='SeriesImageDiv'>
                         <img src={i.cover} className='SeriesImage'></img>
                     </div>
-                    <div className='SeriesTitleDiv'>
-                        <h2 className='SeriesTitle'>{i.seriesname.replace(/([a-z])([A-Z])/g, "$1 / $2")}</h2>
-                    </div>
-                    <div className='SeriesSynoposisDiv'>
-                        <p className='SeriesSynoposis'>
-                            {i.summary.replace(/<[^>]*>/g, "")}
-                        </p>
-                    </div>
-                    <div className='PublicationStatusDiv'>
-                        <p className='PublicationStatus'>
-                            Series status: {i.seriesstatus}</p>
-                    </div>
-                    <div className='CreationDateDiv'>
-                        <p className='CreationDate'>
-                            Publication date: {i.creationdate}
-                        </p>
-                    </div>
-                    <div className='SeriesTypeDiv'>
-                        <p className='SeriesType'>
-                            Series type: {i.seriestype}
-                        </p>
-                    </div>
+                    <div className='SeriesTextDiv'>
+                        <div className='SeriesTitleDiv'>
+                            <h1 className='SeriesTitle'>{i.seriesname.replace(/([a-z])([A-Z])/g, "$1 / $2")}</h1>
+                        </div>
+                        <div className='SeriesSynoposisDiv'>
+                            <p className='SeriesSynoposis'>
+                                Synopsis:
+                            </p>
+                            <p className='ActualSeriesSynoposis'>
+                                {i.summary.replace(/<[^>]*>/g, "")}
+                            </p>
+                        </div>
+                        <div className='PublicationTextDiv'>
+                            <div className='PublicationStatusDiv'>
+                                <p className='PublicationStatus'>
+                                    <b>
+                                        Series status:  
+                                    </b>
+                                        {" " + i.seriesstatus}
+                                    </p>
+                            </div>
+                            <div className='CreationDateDiv'>
+                                <p className='CreationDate'>
+                                    <b>
+                                        Publication date: 
+                                    </b> 
+                                    {" " + i.creationdate}
+                                </p>
+                            </div>
 
+                        </div>
+                        <div className='SeriesTypeDiv'>
+                            <p className='SeriesType'>
+                                <b>
+                                    Series type: 
+                                </b>
+                                {" " + i.seriestype}
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
             );
           });
@@ -92,7 +110,6 @@ function SearchResultsPage() {
             <div className='IFLButtonSearchResults'>
                 <IFLButton className='IFLButtonSearchResultsPage'></IFLButton>
             </div>
-            <h1>Search results page!</h1>
 
             {/* <p>{JSON.stringify(data)}</p>
             {table} */}
