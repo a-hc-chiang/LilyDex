@@ -47,7 +47,9 @@
 .SearchBarCompleteDiv {
     width: 70%;
     margin:auto; 
-    transform: translateX(-5%);
+    transform: translate3d(-5%,-10%,0);
+    z-index: 10;
+    position: relative;
     /* flex-direction: row;
     display: flex;
     flex-wrap: wrap; */

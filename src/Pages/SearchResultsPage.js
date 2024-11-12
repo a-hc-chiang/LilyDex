@@ -31,7 +31,7 @@ function SearchResultsPage() {
         };
 
         fetchData();
-    },[])
+    },[inputVal])
 
     useEffect(() => {
         if (data == null) {
@@ -110,9 +110,6 @@ function SearchResultsPage() {
             <div className='IFLButtonSearchResults'>
                 <IFLButton className='IFLButtonSearchResultsPage'></IFLButton>
             </div>
-
-            {/* <p>{JSON.stringify(data)}</p>
-            {table} */}
             <div className='SearchResultsDiv'>
                 {table}
             </div>
